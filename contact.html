@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Stephan Azevedo</title>
-
+	<link rel="stylesheet" type="text/css" href="assets/css/form.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -28,15 +28,22 @@
 <!-- Start main content -->
 		<div class="mainrow">
 
-			<div class="mainsection"><h2>About Me</h2><hr>
-				<img class="profile" src="assets/images/Stephan_640x640.jpg" alt="Stephan Azevedo" style="width:180px;height:180px;">
-				<p>I’ve worked in the web and digital media design industry for 16 years. I currently live in beautiful downtown Ft. Lauderdale, Florida. I love solving problems with design, and making great ideas happen. When I’m not coding or playing with pixels, you’ll find me in the gym or on the court shooting hoops.</p>
+			<div class="mainsection"><h2>Contact</h2><hr>
+				
+				  <form action="/action_page.php">
+				    <label for="fname">Name</label>
+				    <input type="text" id="fname" name="firstname" placeholder="Full Name">
 
-				<p>I have a passion for simple interfaces. I also love coding. I’ve always loved solving problems. Being good at aesthetic pleasing clean minimalistic design has always been my passion before teaching myself coding. Sometimes I like to work on video and photography projects. Being an avid photographer, I take snapshots with my iPhone or my DSLR Nikon D70.</p>
+				    <label for="lname">Email</label>
+				    <input type="text" id="lname" name="lastname" placeholder="example@gmail.com">
 
-				<p>One of the greatest strengths about being a designer/developer is that not only I can handle the graphical aspects of a project, but I can also fully understand, participate and even lead the technical aspects of those same projects.</p>
+				    <label for="subject">Message</label>
+				    <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
 
-				<p>If you have any questions, feedback, or just want to say hello, feel free to connect with me.</p>
+				    <input type="submit" value="Submit">
+				  </form>
+
+
 			</div>
 			<div class="sidebar">
 				<h2>Connect with me</h2>
@@ -57,5 +64,6 @@
 	<footer>
 
 <!-- End container -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
